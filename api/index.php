@@ -3,7 +3,7 @@
 // Handle API routes
 include '../routes/SimpleRoute.php'; 
 
-header("Content-Type: application/json");
+ header("Content-Type: application/json");
 
 // Parse incoming requests
 $requestMethod = $_SERVER['REQUEST_METHOD'];
