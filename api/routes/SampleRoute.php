@@ -1,6 +1,6 @@
 <?php
 
-include 'controllers/SimpleController.php'; // Adjust path if needed
+include 'controllers/SampleController.php'; // Adjust path if needed
 
 // header("Content-Type: application/json");
 
@@ -20,10 +20,10 @@ if ($path === '/test' && $requestMethod === 'GET') {
 }
 
 
-// Handle API routes
-if ($path === '/api/simple' && $requestMethod === 'GET') {
+// Handle API routes for sample
+if ($path === '/api/sample' && $requestMethod === 'GET') {
   getData($db);
-}elseif ($path === '/simple' && $requestMethod === 'POST') {
+}elseif ($path === '/sample' && $requestMethod === 'POST') {
     // Parse JSON input
     $input = json_decode(file_get_contents("php://input"), true);
 
@@ -36,7 +36,7 @@ if ($path === '/api/simple' && $requestMethod === 'GET') {
 
     // Call the function with the input data
     insertData($db, $input['title'], $input['content'], $input['category_id']);
-}elseif ($path === '/simple' && $requestMethod === 'PUT') {
+}elseif ($path === '/sample' && $requestMethod === 'PUT') {
     $input = json_decode(file_get_contents("php://input"), true);
 
     // Validate input
@@ -48,7 +48,7 @@ if ($path === '/api/simple' && $requestMethod === 'GET') {
 
     // Call the function to update the post
     updateData($db, $input['id'], $input['title'], $input['content'], $input['category_id']);
-} elseif ($path === '/simple' && $requestMethod === 'DELETE') {
+} elseif ($path === '/sample' && $requestMethod === 'DELETE') {
     $input = json_decode(file_get_contents("php://input"), true);
 
     // Validate input

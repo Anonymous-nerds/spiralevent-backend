@@ -1,11 +1,11 @@
 <?php
 // Database connection parameters
-$host = 'ep-purple-queen-a55vn1ki.us-east-2.aws.neon.tech';  // Replace with your Neon host
-$port = '5432';                 // Neon uses the default PostgreSQL port
-$dbname = 'spiral-event';       // Replace with your Neon database name
-$user = 'yakubuanas04';         // Replace with your Neon username
-$password = 'Pq3fZVXu9jvH';     // Replace with your Neon password
-$sslmode = 'require';           // Neon requires SSL connections
+$host = 'ep-purple-queen-a55vn1ki.us-east-2.aws.neon.tech'; 
+$port = '5432';      
+$dbname = 'spiral-event';
+$user = 'yakubuanas04';
+$password = 'Pq3fZVXu9jvH';
+$sslmode = 'require';
 
 // Extract the endpoint ID from the host
 $endpoint = explode('.', $host)[0];
