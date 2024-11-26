@@ -1,6 +1,6 @@
 <?php
 
-include './controllers/SimpleController.php'; // Adjust path if needed
+include '../controllers/SimpleController.php'; // Adjust path if needed
 
 header("Content-Type: application/json");
 
@@ -21,7 +21,7 @@ if ($path === '/test' && $requestMethod === 'GET') {
 
 
 // Handle API routes
-if ($path === '/simple' && $requestMethod === 'GET') {
+if ($path === '/api/simple' && $requestMethod === 'GET') {
   getData($db);
 }elseif ($path === '/simple' && $requestMethod === 'POST') {
     // Parse JSON input

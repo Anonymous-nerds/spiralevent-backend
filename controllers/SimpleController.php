@@ -1,6 +1,6 @@
 <?php
 
-include './config/database.php'; // Include the database connection
+include '../config/database.php'; // Include the database connection
 
 // Function to get data
 function getData($db) {
