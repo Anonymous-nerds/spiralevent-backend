@@ -1,6 +1,6 @@
 <?php
 
-include '../controllers/SimpleController.php'; // Adjust path if needed
+include 'controllers/SimpleController.php'; // Adjust path if needed
 
 // header("Content-Type: application/json");
 

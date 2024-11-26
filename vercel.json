@@ -9,5 +9,11 @@
       "src": "api/**/*.php",
       "use": "@vercel/php"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.php"
+    }
   ]
 }
