@@ -1,5 +1,7 @@
 <?php
-include './controllers/UserController.php';// Adjust path as needed
+
+// Handle API routes
+include './routes/SimpleRoute.php'; 
 
 header("Content-Type: application/json");
 
@@ -7,17 +9,16 @@ header("Content-Type: application/json");
 $requestMethod = $_SERVER['REQUEST_METHOD'];
 $input = json_decode(file_get_contents("php://input"), true);
 
-// Handle API routes
-if ($_SERVER['REQUEST_URI'] === '/api/register' && $requestMethod === 'POST') {
-    registerUser($db, $input['name'], $input['email'], $input['password']);
-} elseif ($_SERVER['REQUEST_URI'] === '/api/login' && $requestMethod === 'POST') {
-    loginUser($db, $input['email'], $input['password']);
-} elseif ($_SERVER['REQUEST_URI'] === '/api/update' && $requestMethod === 'PUT') {
-    updateUser($db, $input['id'], $input['name'], $input['email']);
-} elseif ($_SERVER['REQUEST_URI'] === '/api/delete' && $requestMethod === 'DELETE') {
-    deleteUser($db, $input['id']);
-} else {
-    http_response_code(404);
-    echo json_encode(['message' => 'Endpoint not found']);
+// Debugging: output the request URI and method
+// echo "Request URI: " . $_SERVER['REQUEST_URI'] . "<br>";
+// echo "Request Method: " . $requestMethod . "<br>";
+
+$requestUri = $_SERVER['REQUEST_URI'];
+$path = parse_url($requestUri, PHP_URL_PATH);
+
+if ($path === '/' && $requestMethod === 'GET') {
+  echo json_encode(['message' => 'Test route works']);
 }
+
+
 ?>
