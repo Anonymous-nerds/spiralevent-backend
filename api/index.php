@@ -1,7 +1,7 @@
 <?php
 
 // Handle API routes
-include './routes/SampleRoute.php'; 
+include __DIR__ . '/routes/SampleRoute.php';
 
  header("Content-Type: application/json");
 
