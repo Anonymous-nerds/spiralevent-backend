@@ -1,11 +1,10 @@
 <?php
 
 //require '../config/database.php'; // Include the database connection
+require __DIR__ . '/../../config/database.php'; // db connection
 
-require __DIR__ . '/../../config/database.php';
 
-
-// Function to get data
+// Function to get data from the db
 function getData($db) {
     try {
         // Fetch data from the posts table
@@ -28,6 +27,7 @@ function getData($db) {
 }
 
 
+// function
 function insertData($db, $title, $content, $category_id) {
   try {
       // Check if the data already exists
