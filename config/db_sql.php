@@ -28,5 +28,5 @@ $row = mysqli_fetch_array($result);
 echo " MySQL Version: " . $row[0];
 
 // Close the connection
-mysqli_close($con);
+//mysqli_close($con);
 ?>

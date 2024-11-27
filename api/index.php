@@ -2,9 +2,9 @@
 
 // Handle API routes
 // require 'routes/SampleRoute.php';
-//require __DIR__ . '/routes/SampleRoute.php';
+require __DIR__ . '/routes/SampleRoute.php';
 
-require "../config/db_sql.php";
+// require "../config/db_sql.php";
 
 
 // header("Content-Type: application/json");
