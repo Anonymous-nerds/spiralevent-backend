@@ -8,7 +8,7 @@ $db_name = "defaultdb";
 $port = "21965"; // Port for the remote MySQL server
 
 // SSL certificate file path (adjust if necessary)
-$ssl_ca = "ca.pem"; // Make sure ca.pem is in the correct location
+$ssl_ca = "../ca.pem"; // Make sure ca.pem is in the correct location
 
 // Create a connection with SSL options
 $con = mysqli_init();
