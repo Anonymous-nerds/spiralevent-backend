@@ -1,6 +1,6 @@
 <?php
 
-include 'config/database.php'; // Include the database connection
+require '../config/database.php'; // Include the database connection
 
 // Function to get data
 function getData($db) {
@@ -110,8 +110,6 @@ function deleteData($db, $id) {
       echo json_encode(['message' => 'Database error', 'error' => $e->getMessage()]);
   }
 }
-
-
 
 
 ?>

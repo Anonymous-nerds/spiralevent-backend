@@ -1,9 +1,9 @@
 <?php
 
 // Handle API routes
-include __DIR__ . '/routes/SampleRoute.php';
+require 'routes/SampleRoute.php';
 
- header("Content-Type: application/json");
+// header("Content-Type: application/json");
 
 // Parse incoming requests
 $requestMethod = $_SERVER['REQUEST_METHOD'];

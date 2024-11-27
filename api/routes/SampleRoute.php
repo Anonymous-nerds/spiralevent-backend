@@ -1,8 +1,8 @@
 <?php
 
-include 'controllers/SampleController.php'; // Adjust path if needed
+require 'controllers/SampleController.php'; // Adjust path if needed
 
-// header("Content-Type: application/json");
+ header("Content-Type: application/json");
 
 // Parse incoming requests
 $requestMethod = $_SERVER['REQUEST_METHOD'];
