@@ -1,7 +1,9 @@
 <?php
 
 // Handle API routes
-require 'routes/SampleRoute.php';
+// require 'routes/SampleRoute.php';
+require __DIR__ . '/routes/SampleRoute.php';
+
 
 // header("Content-Type: application/json");
 

@@ -5,7 +5,7 @@ $port = '5432';
 $dbname = 'spiral-event';
 $user = 'yakubuanas04';
 $password = 'Pq3fZVXu9jvH';
-$sslmode = 'require';
+$sslmode = 'require'; 
 
 // Extract the endpoint ID from the host
 $endpoint = explode('.', $host)[0];
@@ -22,7 +22,7 @@ try {
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
     // Uncomment this for debugging if needed
-    // echo "Connected to the Neon PostgreSQL database successfully!";
+     //echo "Connected to the Neon PostgreSQL database successfully!";
     
     // Return the database connection
     return $db;

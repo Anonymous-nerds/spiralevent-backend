@@ -1,6 +1,9 @@
 <?php
 
-require '../config/database.php'; // Include the database connection
+//require '../config/database.php'; // Include the database connection
+
+require __DIR__ . '/../config/database.php';
+
 
 // Function to get data
 function getData($db) {

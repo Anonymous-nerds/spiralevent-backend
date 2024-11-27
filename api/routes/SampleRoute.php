@@ -1,6 +1,9 @@
 <?php
 
-require 'controllers/SampleController.php'; // Adjust path if needed
+//require 'controllers/SampleController.php'; // Adjust path if needed
+
+require __DIR__ . '/../controllers/SampleController.php'; // Fix the path using __DIR__
+
 
  header("Content-Type: application/json");
 
