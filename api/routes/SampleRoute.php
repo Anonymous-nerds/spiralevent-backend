@@ -76,7 +76,7 @@
 // Require SampleController to access database functions (getData, insertData, updateData, deleteData)
 require __DIR__ . '/../controllers/SampleController.php'; // Adjust the path if necessary
 
-header("Content-Type: application/json");
+//header("Content-Type: application/json");
 
 // Parse the incoming request
 $requestMethod = $_SERVER['REQUEST_METHOD'];
